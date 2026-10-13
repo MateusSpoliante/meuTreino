@@ -1,0 +1,20 @@
+:root{--bg:#0f1115;--card:#181b22;--tx:#f1f3f7;--mut:#8b93a3;--ac:#22c55e;--bd:#262b36;--err:#ef4444}
+[data-theme=light]{--bg:#f4f6f9;--card:#fff;--tx:#111827;--mut:#6b7280;--bd:#e2e6ee}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px system-ui,sans-serif;-webkit-tap-highlight-color:transparent}
+.app{max-width:640px;margin:0 auto;padding:16px 14px 150px}
+h1{font-size:1.5rem;margin:.2rem 0 1rem}h2{font-size:1.1rem;margin:1.2rem 0 .5rem}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:14px;margin-bottom:12px}
+.row{display:flex;gap:8px;align-items:center}.grow{flex:1}.wrap{flex-wrap:wrap}.mut{color:var(--mut);font-size:.9rem}
+button{font:inherit;border:0;border-radius:12px;padding:12px 16px;min-height:48px;background:var(--bd);color:var(--tx);cursor:pointer}
+button.pri,button.on{background:var(--ac);color:#04210f;font-weight:700}
+button.big{min-height:60px;font-size:1.1rem;width:100%}button.sm{min-height:40px;padding:8px 12px}button.danger{color:var(--err)}
+input,select,textarea{font:inherit;width:100%;min-height:48px;padding:10px 12px;border-radius:12px;border:1px solid var(--bd);background:var(--bg);color:var(--tx)}
+.num{text-align:center;font-size:1.2rem;font-weight:600}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--bd);padding-bottom:env(safe-area-inset-bottom)}
+nav.tabs a{flex:1;text-align:center;padding:10px 0;color:var(--mut);text-decoration:none;font-size:.75rem}
+nav.tabs a.active{color:var(--ac)}
+.bar{position:fixed;left:12px;right:12px;bottom:calc(68px + env(safe-area-inset-bottom));background:var(--ac);color:#04210f;padding:12px 16px;border-radius:14px;font-weight:700;text-decoration:none;text-align:center}
+.prog{height:8px;border-radius:8px;background:var(--bd);overflow:hidden}.prog>i{display:block;height:100%;background:var(--ac)}
+.done{opacity:.6}.timer{font-size:2.4rem;font-weight:800;text-align:center}.sticky{position:sticky;top:8px;z-index:5}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}.cal span{padding:8px 0;border-radius:8px}.cal .t{background:var(--ac);color:#04210f;font-weight:700}

@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.MeuTreino" parent="android:Theme.Material.NoActionBar" />
+</resources>

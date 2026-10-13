@@ -1,0 +1,10 @@
+node_modules
+dist
+.vercel
+android-legado/.gradle
+android-legado/**/build
+*.log
+.gradle/
+**/.gradle/
+build/
+node_modules/
